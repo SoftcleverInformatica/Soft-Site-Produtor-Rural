@@ -1,0 +1,44 @@
+{
+	"name": "soft-site-sirius-erp-lp",
+	"version": "0.1.0",
+	"private": true,
+	"homepage": "https://sirius.softclever.com.br/",
+	"scripts": {
+		"next": "next dev",
+		"dev": "next dev",
+		"build": "next build",
+		"start": "NODE_ENV=production node server.js",
+		"lint": "next lint",
+		"ui": "npx shadcn-ui@latest add"
+	},
+	"dependencies": {
+		"@next/third-parties": "^14.2.3",
+		"@radix-ui/react-accordion": "^1.1.2",
+		"@radix-ui/react-slot": "^1.0.2",
+		"class-variance-authority": "^0.7.0",
+		"clsx": "^2.1.1",
+		"embla-carousel-autoplay": "^8.0.2",
+		"embla-carousel-react": "^8.0.2",
+		"lucide-react": "^0.375.0",
+		"next": "^14.2.3",
+		"next-images": "^1.8.5",
+		"prettier": "^3.2.5",
+		"react": "^18",
+		"react-dom": "^18",
+		"sharp": "^0.33.3",
+		"tailwind-merge": "^2.3.0",
+		"tailwindcss-animate": "^1.0.7"
+	},
+	"devDependencies": {
+		"@types/node": "^20",
+		"@types/react": "^18",
+		"@types/react-dom": "^18",
+		"autoprefixer": "^10.4.19",
+		"eslint": "^8",
+		"eslint-config-next": "14.2.3",
+		"postcss": "^8.4.38",
+		"tailwind-scrollbar": "^3.1.0",
+		"tailwindcss": "^3.4.3",
+		"typescript": "^5"
+	}
+}
