@@ -13,8 +13,8 @@ export default function Home() {
   return (
     <main className="flex flex-col p-0 mx-auto b-0 justify-center max-w-[1440px] items-center">
       <Header/>
+      <Products/> 
       <Client/>
-      <Products/>
       <Feedback/>
       <AboutUs/>
       <Segments/>

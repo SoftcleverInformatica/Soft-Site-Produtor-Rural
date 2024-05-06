@@ -25,14 +25,14 @@ export default function Products() {
 
     const cards: { image: any, label: string, description: string }[] = [
         { image: NotaFiscalEletronica, label: "Nota Fiscal Eletronica", description: "Nota Fiscal Eletrônica (NF-e) com envio e autorização junto a SEFAZ. Atribuição de CFOP, CST e cálculos automatizados. Permite a baixa do estoque e o envio dos títulos ao contas a receber." },
-        { image: ForcaDeVendas, label: "Força de Vendas", description: "Plataforma WEB para pedidos de venda integrada ao Sírius, ideal para vendedores externos, oferecendo rapidez nas vendas, controle de estoque em tempo real e emissão ágil de NF-e." },
+        // { image: ForcaDeVendas, label: "Força de Vendas", description: "Plataforma WEB para pedidos de venda integrada ao Sírius, ideal para vendedores externos, oferecendo rapidez nas vendas, controle de estoque em tempo real e emissão ágil de NF-e." },
         { image: PedidoVenda, label: "Pedidos de Vendas", description: "Sistema de gestão comercial com funcionalidades para orçamentos, pedidos, análise de vendas, geração de NF-e, controle de estoque e integração com Força de Vendas." },
-        { image: NotaFiscalServicos, label: "Nota Fiscal de Serviços", description: "Nota Fiscal de Serviços Eletrônica (NFS-e), com envio rápido e em lote para o sistema da prefeitura. Gerada a partir do pedido de venda e integrada com o financeiro." },
+        // { image: NotaFiscalServicos, label: "Nota Fiscal de Serviços", description: "Nota Fiscal de Serviços Eletrônica (NFS-e), com envio rápido e em lote para o sistema da prefeitura. Gerada a partir do pedido de venda e integrada com o financeiro." },
         { image: Relatorio, label: "Relatórios Gerenciais", description: "Essenciais para o controle completo e gestão financeira da empresa. Permite ao usuário diversas opções de filtros e relatórios" },
-        { image: Financeiro, label: "Financeiro", description: "Controle detalhado das contas a pagar e a receber a partir de contas contábeis ou centro de custos. Permite integração com cobrança bancária (boletos) e conciliação de saldo." },
-        { image: Compras, label: "Compras", description: "Pedidos de compras para serviços ou produtos. Entrada de mercadoria a partir do XML do fornecedor com envio dos títulos ao módulo contas a pagar." },
-        { image: Producao, label: "Produção", description: "Geração de ordem de produção para estoque a partir do pedido de venda. Controle de matéria prima, ficha técnica, fases da produção e muito mais." },
-        { image: OrdemDeServico, label: "Ordens de Serviços", description: "Totalmente integrado com as vendas, estoque e financeiro. Controle de entradas dos itens que serão consertados." },
+        // { image: Financeiro, label: "Financeiro", description: "Controle detalhado das contas a pagar e a receber a partir de contas contábeis ou centro de custos. Permite integração com cobrança bancária (boletos) e conciliação de saldo." },
+        // { image: Compras, label: "Compras", description: "Pedidos de compras para serviços ou produtos. Entrada de mercadoria a partir do XML do fornecedor com envio dos títulos ao módulo contas a pagar." },
+        // { image: Producao, label: "Produção", description: "Geração de ordem de produção para estoque a partir do pedido de venda. Controle de matéria prima, ficha técnica, fases da produção e muito mais." },
+        // { image: OrdemDeServico, label: "Ordens de Serviços", description: "Totalmente integrado com as vendas, estoque e financeiro. Controle de entradas dos itens que serão consertados." },
     ]
 
     useEffect(() => {
@@ -62,35 +62,34 @@ export default function Products() {
     return (
         <section className="w-full flex flex-col justify-center items-center overflow-y-hidden py-5  gap-7">
             <h2 className="p-5 font-extrabold text-sc2 text-2xl text-center ">Conheça tudo que o Sírius ERP oferece para o seu negócio!</h2>
-            <div className="w-full flex flex-col justify-center items-center h-[80%] md:mt-5">
-                <Carousel className="w-[100%]" plugins={[
-                    Autoplay({ delay: 2000 })
-                ]}>
-                    <CarouselContent className="-ml-1 pb-10">
-                        {cards.map((_, index) => (
-                            <CarouselItem key={index} className="pl-4 pb-10  lg:px-8 basis-[78%] md:basis-[38%] lg:basis-[24%] h-[100%] ">
-                                <div className="p-1 mb-15 lg:p-0">
-                                    <Card className=" mb-15 shadow-2xl z-30">
-                                        <CardContent className="grid grid-rows-12 grid-cols-1 gap-3  h-[27rem] lg:h-[20rem]">
-                                            <div
-                                                className=" col-span-full row-span-4 row-start-2 w-[100%] border-none  flex flex-col items-center justify-center"
-                                            >
-                                                <Image 
-                                                    className="w-[65%] max-w-[8rem] lg:w-[50%] lg:max-w-[50%]" 
-                                                    alt="Cog"
-                                                    src={_.image}
-                                                />
-                                            </div>
-
-                                            <h2 className=" w-full col-span-full  row-span-2 row-start-6 text-center flex flex-row justify-center items-center font-bold text-2xl lg:text-[1.14rem] text-sc">{_.label}</h2>
-                                            <p className="col-span-full  row-span-5 row-start-8 text-center text-sc lg:text-sm">{_.description}</p>
-                                        </CardContent>
-                                    </Card>
+            <div className="w-full flex flex-col  justify-evenly items-center h-[80%] 
+            md:mt-5
+            lg:flex-row">
+                {cards.map((_, index) => (
+                    <div 
+                    key={index}
+                    className="p-1 mb-15 lg:p-0">
+                        <Card className=" mb-15 shadow-2xl z-30 w-[19rem] h-[26rem] mt-[1.2rem]
+                        md:mt-0
+                        lg:w-[16rem] lg:h-[21rem] lg:mt-0
+                        ">
+                            <CardContent className="grid grid-rows-12 grid-cols-1 gap-3  h-[27rem] lg:h-[20rem]">
+                                <div
+                                    className=" col-span-full row-span-4 row-start-2 w-[100%] border-none  flex flex-col items-center justify-center"
+                                >
+                                    <Image
+                                        className="w-[65%] max-w-[8rem] lg:w-[50%] lg:max-w-[50%]"
+                                        alt="Cog"
+                                        src={_.image}
+                                    />
                                 </div>
-                            </CarouselItem>
-                        ))}
-                    </CarouselContent>
-                </Carousel>
+
+                                <h2 className=" w-full col-span-full  row-span-2 row-start-6 text-center flex flex-row justify-center items-center font-bold text-2xl lg:text-[1.14rem] text-sc">{_.label}</h2>
+                                <p className="col-span-full  row-span-5 row-start-8 text-center text-sc lg:text-sm">{_.description}</p>
+                            </CardContent>
+                        </Card>
+                    </div>
+                ))}
             </div>
 
 

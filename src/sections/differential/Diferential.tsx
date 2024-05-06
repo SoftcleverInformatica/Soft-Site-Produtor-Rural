@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image"
-import DiferenciaisImagem from "@/assets/DiferenciaisImage.png"
+import DiferenciaisImagem from "@/assets/Rural/PNG/Diferential.png"
 import { useEffect, useState } from "react";
 import ButtonExpert from "@/src/components/button_expert";
 import Tick from '@/assets/NossosDiferenciaisTick.svg'
@@ -11,7 +11,7 @@ export default function Differential() {
         'Contrato mensal sem fidelidade. Nós confiamos nos serviços que oferecemos.',
         'Mais de 12.000 usuários atendidos em milhares de projetos implantados.',
         'Recomendados por centenas de escritórios contábeis. Os contadores confiam na segurança fiscal do nosso sistema.',
-        'Pacotes para todos os tipos e tamanhos de empresa, seja do varejo, atacado, distribuição, indústria ou serviços.',
+        'Pacotes para todos os tipos e tamanhos de empresa,  seja do campo, do varejo, atacado, distribuição, indústria ou serviços.',
         'Suporte remoto e online totalmente humanizado. Na Soft Clever você não conversa com um robô.',
     ]
 

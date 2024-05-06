@@ -2,9 +2,8 @@
 import Image from 'next/image';
 import LogoAzul from '../../../assets/logo_azul.svg';
 import LogoBranco from '../../../assets/logo_branco.svg';
-import HeaderFull from '../../../assets/HeaderBG.png';
-import HeaderPartial from '../../../assets/header.png';
-
+import headerFull from '@/assets/Rural/PNG/HeaderFull.png';
+import header from '@/assets/Rural/PNG/Header.png';
 import WhatsappIcon from '../../../assets/whatsapp.svg';
 import { useEffect, useState } from 'react';
 import WhatsappIconWhite from '../../../assets/whatsapp_white.svg';
@@ -34,9 +33,9 @@ export default function Header() {
 		return () => {
 			window.removeEventListener('resize', updateText);
 		};
-	}, []);
+	}, []); 
 
-	const bg = isMobile ? { backgroundImage: `url(${HeaderFull.src})` } : undefined;
+	const bg = isMobile ? { backgroundImage: `url(${headerFull.src})` } : undefined;
 	return (
 		<header
 			style={bg}
@@ -56,14 +55,13 @@ export default function Header() {
 				className='flex flex-col col-start-2 col-span-10 row-start-3 p-2 gap-3 text-[#f2faff] 
             lg:text-[#003658] lg:col-span-5 lg:row-span-8 lg:col-start-3 lg:row-start-4'>
 				<div className='flex flex-col gap-[18px]'>
-					<h2 className='text-5xl font-bold'>Sirius ERP</h2>
+					<h2 className='text-5xl font-bold'>Sirius NFE Rural</h2>
 
-					<h4 className='text-3xl font-bold text-justify'>Sistema de Gestão para empresas de todos os tipos e tamanhos</h4>
+					<h4 className='text-3xl font-bold text-justify'>Emissão de nota fiscal simples, rápida para o produtor rural.</h4>
 				</div>
 
 				<p className='text-lg font-normal'>
-					Tenha controle total de todos os departamentos da sua empresa, seja fiscal, comercial, estoque, financeiro, produção e
-					muito mais.
+				A Soft Clever, valorizando o trabalho do homem do campo, desenvolveu o Sírius NFE Rural, uma ferramenta avançada para emissão de nota fiscal eletrônica (NF-e) com todos os recursos necessários para simplificar as questões ficais do dia a dia. 
 				</p>
 			</div>
 
@@ -104,7 +102,7 @@ export default function Header() {
 					<Image
 						className='h-[40.7rem] lg:col-span-6 lg:col-start-7'
 						alt='background_image'
-						src={HeaderPartial}
+						src={header}
 					/>
 				</>
 			)}

@@ -32,20 +32,20 @@ export default function Questions() {
 
     const QuestionsResponse: { Question: string, Response: string }[] = [
         {
-            Question: 'Em quais tipos de empresas o Sírius ERP pode ser utilizado?',
-            Response: 'Por tratar-se de um sistema ERP normalmente é utilizado em empresas que promovem operações de compra, venda ou produção de mercadorias com todos os seus desdobramentos, ou seja, estoque, fiscal, financeiro, compras, produção, etc. Dito isso, a nossa ferramenta pode ser utilizada por revendas, distribuidoras, atacadistas, varejistas e indústrias. O Sírius ERP também possui módulos específicos para alguns setores, tais como: ordens de serviços, assistência técnica, beneficiamento de mercadorias e conhecimento de transportes (transportadoras). Tudo integrado com estoque, financeiro e afins. '
+            Question: 'Em quais tipos de empresas o Sírius NFE Rural pode ser utilizado?',
+            Response: 'Por tratar-se de um sistema ERP normalmente é utilizado em empresas que promovem operações de compra, venda ou produção de mercadorias com todos os seus desdobramentos, ou seja, estoque, fiscal, financeiro, compras, produção, etc.  '
         },
         {
-            Question: 'O Sírius ERP atende empresas de qual porte?',
-            Response: 'O Sírius ERP é modular, portanto, pode ser contratado módulo a módulo. Essa característica permite que a nossa ferramenta atenda empresas de micro, pequeno e médio porte. É muito comum empresas iniciarem a jornada com o Sírius ERP a partir da contratação apenas do Sírius NFE  e, após algum tempo, promover a expansão do pacote contratado com outros módulos,  tais como: comercial, financeiro, compras, etc. A proposta do Sírius ERP é ser um sistema democrático que acompanha o crescimento e o desenvolvimento do cliente.'
+            Question: 'O Sírius NFE Rural atende empresas de qual porte?',
+            Response: 'O Sírius NFE Rural é modular, portanto, pode ser contratado módulo a módulo. Essa característica permite que a nossa ferramenta atenda produtores de micro, pequeno e médio porte. '
         },
         {
-            Question: 'Quais os módulos que compõe o Sírius ERP ?',
-            Response: 'O Sírius ERP é composto por um grande número de módulos, veja os principais: cadastros, fiscal, orçamentos, vendas, liberação, expedição, comercial, comissões, financeiro a pagar e receber, conciliação bancária, cobrança, compras, entrada de mercadoria, sped fiscal / bloco k, produção, assistência técnica, ordem de serviço e outros, mas não se preocupe, o Sírius ERP é modular, portanto, pode ser contratado de acordo com o tamanho do seu negócio. '
+            Question: 'Quais os módulos que compõe o Sírius NFE Rural ?',
+            Response: 'O Sírius NFE Rural é composto por cadastro de clientes, cadastro produtos, cadastro de fornecedores, módulo venda pedidos, módulo NFE e tabelas auxiliares. Por tratar-se de um sistema modular, é possível agregar diversos módulos, tais como; comercial, comissões, financeiro a pagar e receber, conciliação bancária, cobrança, compras, entrada de mercadoria, sped fiscal / bloco k, produção e outros, mas não se preocupe, o Sírius NFE Rural é modular, portanto, pode ser contratado de acordo com o tamanho do seu negócio. '
         },
         {
             Question: 'Eu devo utilizar o sistema instalado no meu computador ou na nuvem (internet)?',
-            Response: 'O Sírius ERP está preparado para trabalhar nos dois ambientes, seja no seu computador, seja na nuvem (cloud). Quando instalado localmente fica totalmente independente do funcionamento da internet, já na modalidade nuvem, depende de uma conexão ativa para o seu funcionamento, por outro lado, você poderá fazer uso do sistema de onde estiver.'
+            Response: 'O Sírius NFE Rural está preparado para trabalhar nos dois ambientes, seja no seu computador, seja na nuvem (cloud). Quando instalado localmente fica totalmente independente do funcionamento da internet, já na modalidade nuvem, depende de uma conexão ativa para o seu funcionamento, por outro lado, você poderá fazer uso do sistema de onde estiver.'
         },
         {
             Question: 'O que é necessário para o sistema funcionar em rede?',
