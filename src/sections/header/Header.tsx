@@ -61,7 +61,7 @@ export default function Header() {
 				</div>
 
 				<p className='text-lg font-normal'>
-				A Soft Clever, valorizando o trabalho do homem do campo, desenvolveu o Sírius NFE Rural, uma ferramenta avançada para emissão de nota fiscal eletrônica (NF-e) com todos os recursos necessários para simplificar as questões ficais do dia a dia. 
+				A Soft Clever, valorizando o trabalho do homem do campo desenvolveu o Sírius NFE Rural, uma ferramenta avançada para emissão de nota fiscal eletrônica (NF-e) com todos os recursos necessários para simplificar as questões ficais do dia a dia. 
 				</p>
 			</div>
 

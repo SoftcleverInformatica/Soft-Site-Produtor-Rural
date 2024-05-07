@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import feedbackImageBg from '../../../assets/feedback.png';
+import feedbackImageBg from '@/assets/Rural/PNG/Feedback.png';
 import avatar from '../../../assets/avatar.svg';
 import star from '../../../assets/star.svg';
 import starGray from '../../../assets/starGray.svg';

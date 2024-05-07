@@ -15,8 +15,8 @@ export default function Home() {
       <Header/>
       <Products/> 
       <Client/>
-      <Feedback/>
       <AboutUs/>
+      <Feedback/>
       <Segments/>
       <Differential/>
       <Questions/>
