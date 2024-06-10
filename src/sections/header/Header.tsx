@@ -8,6 +8,7 @@ import WhatsappIcon from '../../../assets/whatsapp.svg';
 import { useEffect, useState } from 'react';
 import WhatsappIconWhite from '../../../assets/whatsapp_white.svg';
 import { Button } from '@/src/components/ui/button';
+import ButtonExpert from '@/src/components/button_expert';
 
 export default function Header() {
 	const [isMobile, setIsMobile] = useState(false);
@@ -57,10 +58,10 @@ export default function Header() {
 				<div className='flex flex-col gap-[18px]'>
 					<h2 className='text-5xl font-bold'>Sirius NFE Rural</h2>
 
-					<h4 className='text-3xl font-bold text-justify'>Emissão de nota fiscal simples, rápida para o produtor rural.</h4>
+					<h4 className='text-3xl font-bold text-justify text-orange-700'>Emissão de nota fiscal simples, rápida para o produtor rural.</h4>
 				</div>
 
-				<p className='text-lg font-normal'>
+				<p className='text-lg font-normal '>
 				A Soft Clever, valorizando o trabalho do homem do campo desenvolveu o Sírius NFE Rural, uma ferramenta avançada para emissão de nota fiscal eletrônica (NF-e) com todos os recursos necessários para simplificar as questões ficais do dia a dia. 
 				</p>
 			</div>
@@ -68,22 +69,15 @@ export default function Header() {
 			<div
 				className='col-span-10  col-start-2 row-start-8 
             lg:col-span-3 lg:col-start-3 lg:row-start-8'>
-				<Button
-					onClick={() => {
-						window.open('https://api.whatsapp.com/send?phone=5511992810249', '_blank');
-					}}
-					className={`gap-2 p-3 w-[100%] bg-white text-sc hover:bg-zinc-300 
-                lg:bg-sc lg:text-white lg:hover:bg-scHover lg:px-1 lg:py-6 lg:flex`}>
-					<span className='text-lg md:font-normal '>Fale com um Especialista</span>
-					<Image
-						alt='WhatsappIcon'
-						src={isMobile ? WhatsappIcon : WhatsappIconWhite}
-					/>
-				</Button>
+				<ButtonExpert
+					color={'orange'}
+					label='Fale com um Especialista'
+					animation='animate-pulse'
+				/>
 			</div>
 			{!isMobile && (
 				<>
-					<div className='flex justify-start items-start flex-col absolute top-[15vh] left-[80vw]'>
+					{/* <div className='flex justify-start items-start flex-col absolute top-[15vh] left-[80vw]'>
 						<button
 							onClick={() => {
 								window.open('https://api.whatsapp.com/send?phone=5511992810249', '_blank');
@@ -97,7 +91,7 @@ export default function Header() {
 								src={WhatsappIcon}
 							/>
 						</button>
-					</div>
+					</div> */}
 
 					<Image
 						className='h-[40.7rem] lg:col-span-6 lg:col-start-7'

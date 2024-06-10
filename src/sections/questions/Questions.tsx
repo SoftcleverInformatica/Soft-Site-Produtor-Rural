@@ -67,11 +67,12 @@ export default function Questions() {
                         className=" text-white font-bold text-3xl
                  lg:text-5xl lg:leading-[3.5rem]"
                     >Perguntas Frequentes</h2>
-                    {!isMobile && (
-                        <ButtonExpert
-                            color={'white'}
-                            className="gap-2 py-6 px-12 col-span-10 col-start-2 row-start-9 font-semibold bg-white text-sc hover:bg-zinc-300" />
-                    )}
+					{!isMobile && (
+						<ButtonExpert
+							color={'orange'}
+							label='Fale com um especialista'
+						/>
+					)}
                 </div>
 
 
@@ -103,11 +104,12 @@ export default function Questions() {
                     </Accordion>
 
                 </div>
-                {isMobile && (
-                    <ButtonExpert
-                        color={'white'}
-                        className="gap-2 py-6 px-12 col-span-10 col-start-2 row-start-10 font-semibold bg-white text-sc hover:bg-zinc-300" />
-                )}
+				{isMobile && (
+					<ButtonExpert
+						color={'orange'}
+						label='Fale com um especialista'
+					/>
+				)}
 
             </section>
             <div

@@ -66,9 +66,9 @@ export default function Products() {
             md:mt-5
             lg:flex-row">
                 {cards.map((_, index) => (
-                    <div 
-                    key={index}
-                    className="p-1 mb-15 lg:p-0">
+                    <div
+                        key={index}
+                        className="p-1 mb-15 lg:p-0">
                         <Card className=" mb-15 shadow-2xl z-30 w-[19rem] h-[26rem] mt-[1.2rem]
                         md:mt-0
                         lg:w-[16rem] lg:h-[21rem] lg:mt-0
@@ -93,7 +93,11 @@ export default function Products() {
             </div>
 
 
-            <ButtonExpert color={'blue'} className="gap-2 py-6 px-12 w-[82%] bg-sky-950 text-white hover:bg-scHover lg:w-[15.25rem] " />
+            <ButtonExpert
+                color={'orange'}
+                label='Quero decolar o meu negócio'
+                animation='animate-pulse'
+            />
         </section>
     )
 }

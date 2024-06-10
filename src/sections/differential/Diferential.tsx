@@ -55,11 +55,11 @@ export default function Differential() {
                 {differentials.map((text, index) => {
                     return (
                         <li key={index}
-                        className="flex flex-row gap-4 items-center h-[2rem]">
+                            className="flex flex-row gap-4 items-center h-[2rem]">
                             <Image
-                            sizes=""
-                            alt="Tick"
-                            src={Tick}
+                                sizes=""
+                                alt="Tick"
+                                src={Tick}
                             />
                             <span>{text}</span>
                         </li>
@@ -80,11 +80,13 @@ export default function Differential() {
             )}
 
             <ButtonExpert
-                color={'blue'}
-                className="gap-2 py-6 px-12 w-full font-semibold mt-16  bg-sc text-white hover:bg-scHover 
-            col-span-10 col-start-2 row-start-13 lg:col-start-3 
-            md:mt-2
-            lg:w-[15.25rem]" />
+                className="gap-2 w-full  
+                col-span-10 col-start-2 row-start-13 lg:col-start-3 
+                lg:col-span-3
+                "
+                color={'orange'}
+                label='Fale com um especialista'
+            />
 
 
         </section>

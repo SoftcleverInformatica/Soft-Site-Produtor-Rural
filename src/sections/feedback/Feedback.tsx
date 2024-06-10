@@ -355,8 +355,8 @@ export default function Feedback() {
 				</CarouselContent>
 			</Carousel>
 			<ButtonExpert
-				color={'white'}
-				className='gap-2 py-6 px-12 w-[100%] bg-white text-sky-950 hover:bg-scHover lg:w-[15.25rem] '
+				color={'orange'}
+				label='Fale com um especialista'
 			/>
 		</div>
 	);
