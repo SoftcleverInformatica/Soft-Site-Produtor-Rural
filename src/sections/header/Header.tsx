@@ -1,14 +1,11 @@
 'use client';
+import header from '@/assets/Rural/PNG/Header.png';
+import headerFull from '@/assets/Rural/PNG/HeaderFull.png';
+import ButtonExpert from '@/src/components/button_expert';
 import Image from 'next/image';
+import { useEffect, useState } from 'react';
 import LogoAzul from '../../../assets/logo_azul.svg';
 import LogoBranco from '../../../assets/logo_branco.svg';
-import headerFull from '@/assets/Rural/PNG/HeaderFull.png';
-import header from '@/assets/Rural/PNG/Header.png';
-import WhatsappIcon from '../../../assets/whatsapp.svg';
-import { useEffect, useState } from 'react';
-import WhatsappIconWhite from '../../../assets/whatsapp_white.svg';
-import { Button } from '@/src/components/ui/button';
-import ButtonExpert from '@/src/components/button_expert';
 
 export default function Header() {
 	const [isMobile, setIsMobile] = useState(false);
@@ -58,11 +55,11 @@ export default function Header() {
 				<div className='flex flex-col gap-[18px]'>
 					<h2 className='text-5xl font-bold'>Sirius NFE Rural</h2>
 
-					<h4 className='text-3xl font-bold text-justify text-orange-700'>Emissão de nota fiscal simples, rápida para o produtor rural.</h4>
+					<h4 className='text-3xl font-bold text-justify text-orange-700'>Emissão de nota fiscal simples e rápida para o produtor rural.</h4>
 				</div>
 
 				<p className='text-lg font-normal '>
-				A Soft Clever, valorizando o trabalho do homem do campo desenvolveu o Sírius NFE Rural, uma ferramenta avançada para emissão de nota fiscal eletrônica (NF-e) com todos os recursos necessários para simplificar as questões ficais do dia a dia. 
+				A Soft Clever, valorizando o trabalho do homem do campo desenvolveu o Sírius NFE Rural, uma ferramenta avançada para emissão de nota fiscal eletrônica (NF-e) com todos os recursos necessários para simplificar as questões fiscais do dia a dia. 
 				</p>
 			</div>
 
@@ -77,22 +74,6 @@ export default function Header() {
 			</div>
 			{!isMobile && (
 				<>
-					{/* <div className='flex justify-start items-start flex-col absolute top-[15vh] left-[80vw]'>
-						<button
-							onClick={() => {
-								window.open('https://api.whatsapp.com/send?phone=5511992810249', '_blank');
-							}}
-							className='bg-white text-[#003658] flex flex-row gap-1  justify-center col-span-2 items-center w-[8rem] p-1 rounded-md hover:bg-zinc-300  hover:transition'>
-							<span className='font-semibold text-[#003658] w-2rem h-fit pr-2'>Contato</span>
-
-							<Image
-								className='w-[1.2rem] h-fit'
-								alt='WhatsappIcon'
-								src={WhatsappIcon}
-							/>
-						</button>
-					</div> */}
-
 					<Image
 						className='h-[40.7rem] lg:col-span-6 lg:col-start-7'
 						alt='background_image'

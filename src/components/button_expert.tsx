@@ -19,7 +19,7 @@ export default function ButtonExpert({ className, animation, color = 'white', la
 				${animation ? animation : ''} 
 				${className}
 			`}
-			href='https://s.tintim.app/whatsapp/039a35a9-d169-4b36-98c3-cfef6a71d234/21710a1b-daa7-48be-a44d-2f66d3526f1f'
+			href='https://api.whatsapp.com/send?phone=5511992813067&text='
 			target='_blank'>
 			<span
 				className={`

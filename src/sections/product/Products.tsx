@@ -24,7 +24,7 @@ export default function Products() {
     const [isMobile, setIsMobile] = useState(true);
 
     const cards: { image: any, label: string, description: string }[] = [
-        { image: NotaFiscalEletronica, label: "Nota Fiscal Eletronica", description: "Nota Fiscal Eletrônica (NF-e) com envio e autorização junto a SEFAZ. Atribuição de CFOP, CST e cálculos automatizados. Permite a baixa do estoque e o envio dos títulos ao contas a receber." },
+        { image: NotaFiscalEletronica, label: "Nota Fiscal Eletrônica", description: "Nota Fiscal Eletrônica (NF-e) com envio e autorização junto a SEFAZ. Atribuição de CFOP, CST e cálculos automatizados. Permite a baixa do estoque e o envio dos títulos ao contas a receber." },
         // { image: ForcaDeVendas, label: "Força de Vendas", description: "Plataforma WEB para pedidos de venda integrada ao Sírius, ideal para vendedores externos, oferecendo rapidez nas vendas, controle de estoque em tempo real e emissão ágil de NF-e." },
         { image: PedidoVenda, label: "Pedidos de Vendas", description: "Sistema de gestão comercial com funcionalidades para orçamentos, pedidos, análise de vendas, geração de NF-e, controle de estoque e integração com Força de Vendas." },
         // { image: NotaFiscalServicos, label: "Nota Fiscal de Serviços", description: "Nota Fiscal de Serviços Eletrônica (NFS-e), com envio rápido e em lote para o sistema da prefeitura. Gerada a partir do pedido de venda e integrada com o financeiro." },
