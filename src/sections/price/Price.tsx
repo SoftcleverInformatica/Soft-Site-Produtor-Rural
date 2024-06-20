@@ -63,7 +63,7 @@ export default function Price() {
 	return (
 		<section className='flex flex-col items-center gap-5 px-[1.9rem] py-[1.9rem] lg:px-[2.5rem]  lg:gap-10 '>
 			<h2 className='text-sc font-extrabold text-2xl'>Escolha um plano que melhor se encaixa para você</h2>
-			<div className='flex flex-col gap-5 justify-center md:flex-row '>
+			<div className='flex flex-col gap-1 justify-center md:grid md:grid-rows-2 md:grid-cols-2 xl:flex xl:flex-row '>
 				{planos.map((_, i) => {
 					return (
 						<div
@@ -81,7 +81,7 @@ export default function Price() {
 										return (
 											<li
 												key={i}
-												className='text-[#003658]/90 text-xs flex items-start gap-2'>
+												className='text-[#003658]/90 text-xs flex items-center gap-2'>
 												{_.icon}<span>{_.item}</span>
 											</li>
 										);

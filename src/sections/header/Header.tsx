@@ -50,7 +50,7 @@ export default function Header() {
 			</div>
 
 			<div
-				className='flex flex-col col-start-2 col-span-10 row-start-3 p-2 gap-3 text-[#f2faff] 
+				className='flex flex-col col-start-2 col-span-10 row-start-2 p-2 gap-3 text-[#f2faff] md:row-start-3
             lg:text-[#003658] lg:col-span-5 lg:row-span-8 lg:col-start-3 lg:row-start-4'>
 				<div className='flex flex-col gap-[18px]'>
 					<h2 className='text-5xl font-bold'>Sirius NFE Rural</h2>
@@ -64,7 +64,7 @@ export default function Header() {
 			</div>
 
 			<div
-				className='col-span-10  col-start-2 row-start-8 
+				className='col-span-10  col-start-2 row-start-12 
             lg:col-span-3 lg:col-start-3 lg:row-start-8'>
 				<ButtonExpert
 					color={'orange'}
