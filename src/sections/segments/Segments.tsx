@@ -51,7 +51,7 @@ export default function Segments() {
                 flex flex-col
                 justify-between items-center`}>
 						<div
-							className={`varejo h-[13.8rem] w-full bg-cover bg-center bg-no-repeat  p-5 gap-3 rounded-lg  
+							className={`varejo min-h-[13.8rem] w-full bg-cover bg-center bg-no-repeat  p-5 gap-3 rounded-lg  
                         md:w-full
                         lg:m-2 lg:w-full lg:h-[10.3rem]  
                         flex flex-col`}>
@@ -63,7 +63,7 @@ export default function Segments() {
 						</div>
 
 						<div
-							className={`atacado h-[13.8rem] w-full bg-cover bg-no-repeat  p-5 gap-3  rounded-lg 
+							className={`atacado min-h-[13.8rem] w-full bg-cover bg-no-repeat  p-5 gap-3  rounded-lg 
                         md:w-full
                         lg:m-2 lg:w-full  lg:h-[10.3rem]
                         flex flex-col`}>
@@ -81,14 +81,14 @@ export default function Segments() {
 						flex flex-col
 						justify-between items-center`}>
 						<div
-							className={`industria h-[13.8rem] md:w-full lg:h-[10.3rem] w-full bg-cover bg-no-repeat flex flex-col p-5 gap-3 lg:w-[29rem] rounded-lg lg:m-2`}>
+							className={`industria min-h-[13.8rem] md:w-full lg:h-[10.3rem] w-full bg-cover bg-no-repeat flex flex-col p-5 gap-3 lg:w-[29rem] rounded-lg lg:m-2`}>
 							<h2 className='text-white font-semibold'>Indústria e Serviço</h2>
 							<p className='text-white font-light'>
 								Ordens de produção com explosão de matéria prima e lote. Controle Completo de Assistência Técnica.
 							</p>
 						</div>
 						<div
-							className={`fiscal h-[13.8rem]  md:w-full lg:h-[10.3rem] w-full bg-cover bg-no-repeat flex flex-col p-5 gap-3 lg:w-[29rem] rounded-lg lg:m-2`}>
+							className={`fiscal min-h-[13.8rem]  md:w-full lg:h-[10.3rem] w-full bg-cover bg-no-repeat flex flex-col p-5 gap-3 lg:w-[29rem] rounded-lg lg:m-2`}>
 							<h2 className='text-white font-semibold'>Fiscal</h2>
 							<p className='text-white font-light'>Sped ICMS, IPI, Pis e Cofins e Bloco K completo.</p>
 						</div>

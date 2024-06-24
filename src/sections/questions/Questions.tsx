@@ -67,25 +67,18 @@ export default function Questions() {
                         className=" text-white font-bold text-3xl
                  lg:text-5xl lg:leading-[3.5rem]"
                     >Perguntas Frequentes</h2>
-					{!isMobile && (
-						<ButtonExpert
-							color={'orange'}
-							label='Fale com um especialista'
-						/>
-					)}
+                    {!isMobile && (
+                        <ButtonExpert
+                            color={'orange'}
+                            label='Fale com um especialista'
+                        />
+                    )}
                 </div>
 
 
 
-                <div className="col-span-10 col-start-2  row-span-7 row-start-3
-                md:mb-[2.5rem]
-            lg:col-span-6 lg:col-start-6 lg:row-start-1 lg:row-st
-            ">
-                    <Accordion
-                        className="gap-3 bg-white p-4  rounded-md"
-                        type="single"
-                        collapsible
-                    >
+                <div className="col-span-10 col-start-2  row-span-7 row-start-3 md:mb-[2.5rem] lg:col-span-6 lg:col-start-6 lg:row-start-1 lg:row-st">
+                    <Accordion className="gap-3 bg-white p-4  rounded-md" type="single" collapsible>
                         {QuestionsResponse.map((item, index) => {
                             return (
                                 <AccordionItem
@@ -100,20 +93,21 @@ export default function Questions() {
                                 </AccordionItem>
                             )
                         })}
-
                     </Accordion>
 
                 </div>
-				{isMobile && (
-					<ButtonExpert
-						color={'orange'}
-						label='Fale com um especialista'
-					/>
-				)}
+
+                {isMobile && (
+                    <ButtonExpert
+                        className="row-start-10 col-span-10 col-start-2 row-span-1 h-14"
+                        color={'orange'}
+                        label='Fale com um especialista'
+                    />
+                )}
 
             </section>
             <div
-            className="section9 bg-cover bg-no-repeat w-full h-[15vh] lg:h-[25vh] max-h-[15rem] min-h-[8rem]"
+                className="section9 bg-cover bg-no-repeat w-full h-[15vh] lg:h-[25vh] max-h-[15rem] min-h-[8rem]"
             ></div>
         </>
     )

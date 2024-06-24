@@ -81,7 +81,7 @@ export default function Differential() {
 
             <ButtonExpert
                 className="gap-2 w-full  
-                col-span-10 col-start-2 row-start-13 lg:col-start-3 
+                col-span-10 col-start-2 row-start-13 mt-16 md:mt-0 lg:col-start-3 
                 lg:col-span-3
                 "
                 color={'orange'}
