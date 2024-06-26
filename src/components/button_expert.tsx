@@ -18,8 +18,8 @@ export default function ButtonExpert({ className, animation, color = 'white', la
 				${color === 'blue' ? 'bg-sc' : ''} 
 				${animation ? animation : ''} 
 				${className}
-			`}
-						href='https://api.whatsapp.com/send?phone=5511992813067&text=Bom%20dia!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Sirius%20Rural'
+			`}			
+			href='https://api.whatsapp.com/send?phone=5511992810253&text=Bom%20dia!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Sirius%20Rural'
 			target='_blank'>
 			<span
 				className={`
